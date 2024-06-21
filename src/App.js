@@ -1,16 +1,10 @@
 import "./App.css";
-import { ThemeProvider } from "./hooks/useContext/themeContext";
-import ThemeToggleButton from "./hooks/useContext/ThemeToggleButton";
-import CurrentTheme from "./hooks/useContext/CurrentTheme";
+import Counter from "./hooks/useReducer/Counter";
 
 function App() {
   return (
     <div className="App">
-      <ThemeProvider>
-        <h1>Ligh/Dark Mode</h1>
-        <ThemeToggleButton />
-        <CurrentTheme/>
-      </ThemeProvider>
+     <Counter/>
     </div>
   );
 }
