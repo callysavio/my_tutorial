@@ -1,18 +1,14 @@
 import "./App.css";
-// import { ThemeProvider } from "./hooks/useContext/themeContext";
-// import ThemeToggleButton from "./hooks/useContext/ThemeToggleButton";
-// import CurrentTheme from "./hooks/useContext/CurrentTheme";
-import TodoList from "./hooks/Redux/ToDoApp/ToDo";
-
+import { BrowserRouter as Router } from "react-router-dom";
+import Pages from "./pages/Pages";
+import Header from "./pages/Header";
 function App() {
   return (
     <div className="App">
-      <TodoList/>
-      {/* <ThemeProvider>
-        <h1>Ligh/Dark Mode</h1>
-        <ThemeToggleButton />
-        <CurrentTheme/>
-      </ThemeProvider> */}
+      <Router>
+        <Header/>
+        <Pages/>
+     </Router>
     </div>
   );
 }
